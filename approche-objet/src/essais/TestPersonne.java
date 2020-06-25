@@ -14,6 +14,7 @@ public class TestPersonne {
 		personne1.adresse = adresse1;
 		
 		Personne personne2 = new Personne("Porti", "Louis", adresse2);
+		personne2.modifieAdresse(adresse1);
 	}
 
 }
