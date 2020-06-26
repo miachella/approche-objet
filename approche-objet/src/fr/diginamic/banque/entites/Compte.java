@@ -10,8 +10,9 @@ public class Compte {
 		this.solde = solde;
 	}
 	
+	@Override
 	public String toString() {
-		return "Numéro de compte : " + numeroDeCompte + ", solde : " + solde + ".";
+		return "Numéro de compte : " + numeroDeCompte + ", solde : " + solde;
 	}
 
 	public int getNumeroDeCompte() {
