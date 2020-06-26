@@ -36,16 +36,16 @@ public class Personne {
 		this.adresse = nouvelleAdresse;
 	}
 	
-	public String retourneNom (String nom) {
-		return nom;
+	public String retourneNom () {
+		return this.nom;
 	}
 	
-	public String retournePrenom (String prenom) {
-		return prenom;
+	public String retournePrenom () {
+		return this.prenom;
 	}
 	
-	public AdressePostale retourneAdresse (AdressePostale adresse) {
-		return adresse;
+	public AdressePostale retourneAdresse () {
+		return this.adresse;
 	}
 	
 }
