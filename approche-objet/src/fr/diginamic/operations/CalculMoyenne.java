@@ -16,13 +16,13 @@ public class CalculMoyenne {
 	public void ajout () {
 
         for (int n = 0; n < 10 ; n++) {
+        	
+        	System.out.println("Tapez une valeur du tableau :");
+            val = scanner.nextInt() ;
+            
                 if (n < table.length) {
-                        System.out.println("Tapez une valeur du tableau :");
-                        val = scanner.nextInt() ;
                         table[n] = val;
                 } else if (n == table.length) {
-                	System.out.println("Tapez une valeur du tableau :");
-                    val = scanner.nextInt() ;
                 	double[] newTable = new double[table.length + 1];
                 	for (int i = 0; i < newTable.length; i++) {
                 		if (i < table.length) {
