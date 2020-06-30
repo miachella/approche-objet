@@ -24,9 +24,9 @@ public class Cercle {
 		return surface;
 	}
 	
-	public static Cercle buildCercle(double rayon) {
-		return new Cercle(rayon);
-	}
+	//public static Cercle buildCercle(double rayon) {
+		//return new Cercle(rayon);
+	//}
 	
 	public double getRayon() {
 		return rayon;

@@ -19,7 +19,7 @@ public class TestCercle {
 		System.out.println("Le cercle de rayon " + cercle1.getRayon() + " a un périmètre de " + perimetre1 + " cm et une aire de " + surface1 + " cm2.");
 		System.out.println("Le cercle de rayon " + cercle2.getRayon() + " a un périmètre de " + perimetre2 + " cm et une aire de " + surface2 + " cm2.");
 		
-		Cercle cercle = Cercle.buildCercle(5);
+		Cercle cercle = CercleFactory.buildCercle(5);
 		System.out.println("Le cercle de rayon " + cercle.getRayon() + " a un périmètre de " + cercle.calculerPerimetre() + " cm et une aire de " + cercle.calculerSurface() + " cm2.");
 
 	}
