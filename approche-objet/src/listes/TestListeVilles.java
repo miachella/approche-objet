@@ -57,7 +57,7 @@ public class TestListeVilles {
 			Ville ville = iterator.next();
 			if (ville.getNom().equals(petiteVille)) {
 				iterator.remove();
-				System.out.println("L'élément " + ville.getNom() + " a été effacé de la liste.");
+				System.out.println("L'élément " + petiteVille + " a été effacé de la liste.");
 			}
 		}
 		
