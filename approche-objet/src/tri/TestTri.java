@@ -30,10 +30,12 @@ public class TestTri {
 		liste.add(tarbes);
 		
 		Collections.sort(liste, new ComparatorHabitant());	
-		System.out.println(liste);
-		
+		System.out.println("La liste de villes triées par nombre d'habitants :");
+		liste.forEach(v -> System.out.println(v));
 		Collections.sort(liste, new ComparatorNom());	
-		System.out.println(liste);
+		System.out.println("La liste de villes triées par nom :");
+		liste.forEach(v -> System.out.println(v));
+
 	}
 
 }
