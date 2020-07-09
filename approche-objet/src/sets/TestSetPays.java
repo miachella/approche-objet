@@ -65,6 +65,25 @@ public class TestSetPays {
 			System.out.println(pays);
 		}
 		
+		
+		//Test redefinition méthode Equals
+		
+		Pays pays1 = new Pays("USA", 328000000, 59495);
+		Pays pays2 = new Pays("USA", 328000000, 59495);
+		Pays pays3 = new Pays("USA", 328005500, 59495);
+		Pays pays4 = new Pays(null, 328005500, 59495);
+		Pays pays5 = new Pays(null, 328005500, 59495);
+		Pays pays6 = pays1;
+
+		
+		System.out.println(pays1.equals(pays2));
+		System.out.println(pays1.equals(pays3));
+		System.out.println(pays4.equals(pays5));
+		System.out.println(pays1 == pays2);
+		System.out.println(pays1 == pays6);
+
+
+
 	}
 
 }

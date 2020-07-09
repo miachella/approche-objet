@@ -1,4 +1,5 @@
 package sets;
+import org.apache.commons.lang3.builder.EqualsBuilder;
 
 public class Pays {
 	
@@ -15,6 +16,16 @@ public class Pays {
 	@Override
 	public String toString() {
 		return this.getNom() + ", " + this.getNbHab() + " habitants, PIB : " + this.getPib() + "$/hab.";
+	}
+	
+	public boolean equals(Pays pays) {
+		if (!(pays instanceof Pays)) {
+			return false;
+		} else if (pays == null) {
+			return false;
+		}
+		Pays other = (Pays) pays;
+		return new EqualsBuilder().append(nom, other.getNom()).append(nbHab, other.getNbHab()).append(pib, other.getPib()).isEquals();
 	}
 
 	public String getNom() {
